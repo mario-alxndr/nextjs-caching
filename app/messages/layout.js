@@ -1,7 +1,7 @@
 import { getMessages } from '@/lib/messages';
 
-export default function MessagesLayout({ children }) {
-  const messages = getMessages();
+export default async function MessagesLayout({ children }) {
+  const messages = await getMessages();
   const totalMessages = messages.length;
 
   return (
